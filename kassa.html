@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Köp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="kassan">
+
+    <nav>
+        <ul>
+            <li><a href="rapport.html">Rapport</a></li>
+            <li><a href="köp.html">Inför ditt köp</a></li>
+            <li><a href="kassa.html">Köp</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Produkter &darr;</a>
+        <ul class="dropmeny">
+        <li><a href="bollar.html">Hamsterbollar</a></li>
+        <li><a href="hamstrar.html">Hamstrar</a></li>
+        </ul>
+        </ul>
+    </nav>
+    
+    <form id="beställning">
+        <fieldset id="vilkenprodukt">
+            <legend>Jag vill köpa</legend>
+            <label>
+                <input type="checkbox" value="romeov5" name="product">Romeov5
+            </label>
+            <label>
+                <input type="checkbox" value="Exodia XC3000" name="product">Exodia XC3000
+            </label>
+            <label>
+                <input type="checkbox" value="syriskhamster" name="product">Syrisk hamster
+            </label>
+            <label>
+                <input type="checkbox" value="dvärghamster" name="product">Dvärg hamster
+            </label>
+                <fieldset id="kontaktinformation">
+                    <label for="name">Namn</label>
+                    <input type="text" name="name" id="name">
+                    <label for="street">Adress</label>
+                    <input type="text" name="street" id="street">
+                    <label for="zipcode">Postnummer</label>
+                    <input type="text" name="zipcode" id="zipcode">
+                    <label for="town">Stad</label>
+                    <input type="text" name="city" id="town">
+                    <label for="email">E-post</label>
+                    <input type="text" name="email" id="email">
+                </fieldset>
+                <input type="submit" value="Köp" id="send">
+        </fieldset>
+        </form>
+</body>
+
+</html>

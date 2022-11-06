@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+
+html,
+body,
+nav,
+header,
+main,
+aside,
+footer,
+article,
+section, ul, li, img
+div {
+    margin: 0;
+    padding: 0px;
+}
+
+
+
+body {
+    background-color: #f7f5f3;
+    cursor: url(img/cursoredit.png), auto;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 3fr 1fr;
+    grid-template-areas:
+        "nav nav nav"
+        "mainbild mainbild maintext"
+        "mainbild mainbild maintext"
+        "subtext subtext subtext2";
+    grid-gap: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 4px 5px 6px rgb(213, 73, 173);
+    
+    
+}
+
+nav {
+    grid-area: nav;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+  }
+
+.mainbild {
+    grid-area: mainbild;
+    background-image: url("img/kutterspån.jpg");
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+
+  
+  
+
+.maintext {
+    grid-area: maintext;
+    background-color: #eda9d9;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.subtext {
+    grid-area: subtext;
+    background-color: #e497b7;
+    text-align: center;
+
+}
+
+.subtext2 {
+    grid-area: subtext2;
+    background-color: #e497b7;
+    text-align: center;
+}
+
+.produkter{
+    grid-area:mainbild;
+}
+
+.vänsterbild, .högerbild{
+    align-self: center;
+
+}
+
+.högerbild:hover, .vänsterbild:hover{
+    transform: scale(100%) rotate(2880deg);
+    transition: all 55s;
+    
+}
+
+.mainbildbanner
+{
+    grid-area: mainbild;
+    background-image: url("img/hamstermania2.jpg");
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+ul{
+    list-style: none;
+    background-color: #daafcd;
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    display: inline-block;
+    position: relative;
+    padding: 8px 16px;
+}
+ul li a{
+    display: block;
+    padding: 20px 35px;
+    color: rgb(0, 0, 0);
+    
+    
+}
+
+
+ul li ul.dropmeny li {
+display: block;
+border: 1px solid black;
+}
+
+ul li ul.dropmeny{
+    width: 100%;
+    position: absolute;
+    display: none;
+    z-index: 2;
+}
+ul li a:hover{
+    background-color: #d47cba;
+}
+ul li:hover ul.dropmeny{
+    display: block;
+}
+
+
+
+.lok{
+background-color: #8788e0;
+}
+
+.lok:hover{
+    background-color: rgb(253, 163, 249);
+}
+
+ul#loklista{
+    font-size: 20px;
+    height: 100%;
+    background-image: url(img/kutterspån.jpg);
+}
+
+ #loklista li{
+    display: flex;
+    width: 450px;
+    margin-left: 5%;
+    z-index: 1;
+    align-self: center;
+    color: #d47cba;
+}
+
+#beställning{
+    display: flex;
+    margin-left: 50vw;
+   transform:translatex(-50%);
+   height: 500px;
+   background-color: #e497b7;
+
+}
+
+#kontaktinformation{
+    margin-top: 10px;
+}
+
+#vilkenprodukt{
+    display: flex;
+    padding: 30px;
+    gap: 50px;
+}
+
+#kassan{
+    background-image: url(img/kutterspån.jpg);
+}
+
+legend{
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+#send{
+    height: 50px;
+}
